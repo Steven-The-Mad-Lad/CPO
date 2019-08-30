@@ -26,15 +26,173 @@
     </div>
   </div>
 
-<div class="top-banner">
+<div class="top-banner" id="top-banner-slider"></div>
 
+<!--
+<div class="top-banner-buttons">
+  <button class="top-banner-slider-buttons">1</button>
+  <button class="top-banner-slider-buttons">2</button>
+  <button class="top-banner-slider-buttons">3</button>
+</div>
+-->
+<div class="section-one-background">
+  <div class="section-one-container">
+
+    <div style="margin-left: 50px;" class="section-one-section-container">
+      <div style="background-image: url('images/Languages.png');" class="section-one-image"></div>
+      <p class="section-one-title">Languages</p>
+      <div class="section-one-text-container">
+        <p class="section-one-text">Not the title, this is other text</p>
+      </div>
+    </div>
+
+    <div class="section-one-section-container">
+      <div style="background-image: url('images/Parties.png');" class="section-one-image"></div>
+      <p class="section-one-title">Parties</p>
+        <p class="section-one-text">Not the title, this is other text</p>
+    </div>
+
+    <div class="section-one-section-container">
+      <div style="background-image: url('images/Community.png');" class="section-one-image"></div>
+      <p class="section-one-title">Community</p>
+      <p class="section-one-text">Not the title, this is other text</p>
+    </div>
+
+    <div class="section-one-section-container">
+      <div style="background-image: url('images/Safety.png');" class="section-one-image"></div>
+      <p class="section-one-title">Safety</p>
+      <p class="section-one-text">Not the title, this is other text</p>
+    </div>
+
+  </div>
 </div>
 
-
+<div class="freemembership">
+  <div class="freemembership-container">
+    <div class="freemembership-image"></div>
+    <p class="freemembership-text">100% FREE</p>
+  </div>
+</div>
 
 
 </body>
 <style>
+
+.freemembership-text {
+  font-family: "Burbank Big Condensed";
+  color: white;
+  font-size: 60px;
+  margin-left: -300px;
+  padding-top: 10px;
+}
+
+.freemembership-image {
+  width: 110px;
+  height: 110px;
+  background-image: url("images/membership.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  margin-left: 300px;
+  transform: rotate(350deg);
+  margin-right: -300px;
+}
+
+.freemembership {
+  width: 100%;
+  height: 100px;
+  background-color: #1E7EBE;
+  border: 2px solid #117db8;
+}
+
+.freemembership-container {
+  width: 1000px;
+  height: 100px;
+}
+
+.section-one-text {
+  font-size: 20px;
+  color: white;
+  border-radius: 100px;
+}
+
+.section-one-title {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  border-radius: 100px;
+}
+
+.section-one-image {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #117db8;
+  background-image: url("images/headrest.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.section-one-section-container {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section-one-container {
+  background-color: transparent;
+  width: 1000px;
+  height: 200px;
+  padding-top: 40px;
+}
+
+.section-one-background {
+  width: 100%;
+  height: 350px;
+  background: rgb(21,131,215);
+background: linear-gradient(0deg, rgba(21,131,215,1) 0%, rgba(34,164,243,1) 100%);
+border: 2px solid #117db8;
+}
+
+.top-banner-slider-buttons {
+  color: white;
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  background: rgb(24,140,223);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: linear-gradient(0deg, rgba(24,140,223,1) 0%, rgba(31,158,238,1) 100%);
+}
+
+.top-banner-buttons {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  margin-top: -50px;
+
+}
+
+.top-banner {
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  background-image: url("images/headbanner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
 
 .nav-bar-links-emojis {
   width: 30px;
@@ -48,14 +206,12 @@
   background-size: cover;
 }
 
-.top-banner {
+.top-banner-images {
   width: 100%;
   height: 400px;
-  background-color: black;
-  background-image: url("images/headrest.png");
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
   .nav-bar-header-links-bar {
@@ -65,7 +221,7 @@
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 8px;
     background-color: #004187;
     float: left;
     margin-left: 20px;
@@ -88,7 +244,7 @@
   font-weight: 600;
   margin-left: 20px;
   float: left;
-  margin-top: 15px;
+  margin-top: 18px;
   border-radius: 100px;
   padding: 5px 10px 5px 10px;
 }
@@ -101,7 +257,7 @@
   width: 170px;
   height: 47px;
   border-radius: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
   float: right;
   color: #604521;
   background-image: url("images/playnorm.png");
@@ -118,7 +274,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   float: left;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .nav-bar-header-container {
@@ -133,7 +289,7 @@
   background-color: black;
   background: rgb(21,131,215);
   background: linear-gradient(0deg, rgba(21,131,215,1) 0%, rgba(34,164,243,1) 100%);
-  border-bottom: 10px solid #1E7EBE;
+  border-bottom: 2px solid #117db8;
 }
 
 body {
@@ -153,4 +309,31 @@ body {
 @import url(//db.onlinewebfonts.com/c/cdc8c3de1e6bd5a9a67c6a001f9fedd0?family=Burbank+Big+Condensed);
 
 </style>
+
+<script>
+
+var i = 0;
+var images = [];
+var time = 7000;
+
+images[0] = 'images/headrest.png';
+images[1] = 'images/2.jpg';
+images[2] = 'images/3.jpg';
+
+function changeImg() {
+  document.getElementById("top-banner-slider").style.backgroundImage = 'url('+images[i]+')';
+
+  if(i < images.length - 1){
+    i++;
+  } else {
+    i = 0;
+  }
+  console.log(i);
+  setTimeout("changeImg()", time);
+}
+
+//window.onload = changeImg;
+
+</script>
+
 </html>
