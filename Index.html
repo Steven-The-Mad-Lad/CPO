@@ -6,30 +6,40 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="//db.onlinewebfonts.com/c/cdc8c3de1e6bd5a9a67c6a001f9fedd0?family=Burbank+Big+Condensed" rel="stylesheet" type="text/css"/>
-  <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel = "stylesheet" type = "text/css" href = "styles.css" />
 </head>
 
 <body>
+
 <center>
+
+
+
+<!-- AD -->
+<div class="ad" style="width: 100%; height: 90px; background-color: #117db8;">
+  <div style="background-image: url('https://via.placeholder.com/728x90'); width: 728px; height: 90px; background-repeat: no-repeat; background-position: center;">
+</div>
+
   <div class="nav-bar-header">
     <div class="nav-bar-header-container">
       <div class="nav-bar-header-logo"></div>
       <button class="nav-bar-header-links-bar"><i class="fa fa-bars"></i></button>
-      <button class="nav-bar-header-play-button"></button>
-      <a class="nav-bar-links" href="#">
+      <button onclick="playbutton()" class="nav-bar-header-play-button">Play Now!</button>
+      <a class="nav-bar-links" href="https://secured.cponline.pw/penguin/en/create/">
         <div class="nav-bar-links-emojis" style="background-image: url('images/createpeng.png')"></div>Create Penguin</a>
-      <a class="nav-bar-links" href="#">
+      <a class="nav-bar-links" href="https://secured.cponline.pw/penguin/en/forgot-password/">
         <div class="nav-bar-links-emojis" style="background-image: url('images/recoverpass.png')"></div>Change Password</a>
-      <a class="nav-bar-links" href="#">
+      <a class="nav-bar-links" href="#footer">
         <div class="nav-bar-links-emojis" style="background-image: url('images/socialmedia.png')"></div>Social Media</a>
-      <a class="nav-bar-links" href="#">
+      <a class="nav-bar-links" href="https://cponline.pw/whats-new/">
         <div class="nav-bar-links-emojis" style="background-image: url('images/blog.png')"></div>Blog</a>
     </div>
   </div>
 
 <div class="top-banner">
 
-  <video class="youtube-section-video" style="width: 100%; height: 400px;" autoplay="" muted="" loop="">
+  <video class="youtube-section-video top-video" style="width: 100%; height: 400px;" autoplay="" muted="" loop="">
     <source src="media/header.mp4" type="video/mp4">
   </video>
 
@@ -49,14 +59,14 @@
       <div style="background-image: url('images/Languages.png');" class="section-one-image"></div>
       <p class="section-one-title">Languages</p>
       <div class="section-one-text-container">
-        <p class="section-one-text">TEXT</p>
+        <p class="section-one-text"> We support 3 of the most widely used languages including; English, Spanish and Portuguese.</p>
       </div>
     </div>
 
     <div class="section-one-section-container">
       <div style="background-image: url('images/Parties.png');" class="section-one-image"></div>
       <p class="section-one-title">Parties</p>
-        <p class="section-one-text">Not the title, this is other text</p>
+        <p class="section-one-text">With parties being thrown almost every few weeks there's always something new to discover.</p>
     </div>
 
     <div class="section-one-section-container">
@@ -68,10 +78,14 @@
     <div class="section-one-section-container">
       <div style="background-image: url('images/Safety.png');" class="section-one-image"></div>
       <p class="section-one-title">Safety</p>
-      <p class="section-one-text">Safety is our number one priority, which is why we have a dedicated staff team to make sure everybody feels safe within our community.</p>
+      <p class="section-one-text">We have a dedicated staff team to make sure everybody feels safe within our community.</p>
     </div>
 
   </div>
+</div>
+
+<div onclick="tothetop()" id="scrollbutton" class="arrow-top">
+  <i onclick="tothetop()" class="glyphicon glyphicon-menu-up"></i>
 </div>
 
 <div class="freemembership">
@@ -79,6 +93,11 @@
     <div class="freemembership-image"></div>
     <p class="freemembership-text">100% FREE</p>
   </div>
+</div>
+
+<!-- AD -->
+<div class="ad" style="width: 100%; height: 90px; background-color: #117db8;">
+  <div style="background-image: url('https://via.placeholder.com/728x90'); width: 728px; height: 90px; background-repeat: no-repeat; background-position: center;">
 </div>
 
 <div class="youtube-section">
@@ -90,8 +109,8 @@
     <div class="youtube-section-text-container">
       <p class="youtube-section-title">Our Videos</p>
       <br>
-      <p class="youtube-section-text">Again, just random placeholder text.Again, just random placeholder text.Again, just random placeholder text.</p>
-      <button class="youtube-section-button">SUBSCRIBE</button>
+      <p class="youtube-section-text">Stay up to date with the latest parties, events and more by clicking the button below to be notified when we upload a new video!</p>
+      <button onclick="subbutton()" class="youtube-section-button">SUBSCRIBE</button>
     </div>
 
 
@@ -132,11 +151,148 @@
   </div>
 </div>
 
+<div class="footer">
 
+</div>
 
 
 </body>
 <style>
+
+.glyphicon-menu-up {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.arrow-top {
+  width: 50px;
+  height: 50px;
+  background-color: #193f54;
+  position: fixed;
+  z-index: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-top: -20px;
+  border-radius: 100%;
+  display: none;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+}
+
+.youtube-section-button:hover {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+
+.youtube-section-button:active {
+  transform: scale(0.9);
+  transform-origin: 50% 50%;
+}
+
+.nav-bar-header-play-button:hover {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+
+.nav-bar-header-play-button:active {
+  transform: scale(0.9);
+  transform-origin: 50% 50%;
+}
+
+.nav-bar-header-play-button {
+  display: -moz-inline-box;
+display: inline-block;
+font-family: 'Poppins', proxima_nova_bold, sans-serif;
+font-weight: 600;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: url(media/button-shine-play.png) no-repeat center 0, -moz-linear-gradient(270deg, #ffe477 0, #fc0 200%);
+background: url(media/button-shine-play.png) no-repeat center 0, linear-gradient(-180deg, #ffe477 0, #fc0 200%);
+-moz-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+-webkit-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+height: 50px;
+line-height: 50px;
+box-sizing: border-box;
+font-size: 24px;
+color: #6e4e00;
+text-shadow: #fff 0 1px 0;
+text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+border: 1px solid #FEB53F;
+width: 160px;
+margin-top: 8px;
+transition: transform .4s;
+}
+
+.screen-size-warning-main-text {
+  padding-top: 15px;
+  color: white;
+  font-size: 20px;
+  width: 400px;
+}
+
+.screen-size-warning-main {
+  background-color: #b8c171;
+  height: 100%;
+  width: 100%;
+}
+
+.screen-size-warning-title {
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.screen-size-warning-top {
+  width: 100%;
+  height: 40px;
+  background-color: #919a4d;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+}
+
+.screen-size-warning-container {
+  width: 100%;
+  height: 180px;
+  background-color: transparent;
+  z-index: 2;
+  position: fixed;
+  display: none;
+}
+
+
+@font-face {
+    font-family: 'Burbank Small';
+    src: url('media/BurbankSmall-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.section-one-title {
+  font-size: 25px;
+  font-family: 'Burbank Small';
+  color: white;
+  font-weight: 900;
+  border-radius: 100px;
+}
+
+.section-one-section-container:hover {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
 
 .blog-text {
 float: left;
@@ -185,7 +341,7 @@ margin-top: -20px;
 
 .blog-title {
   float: left;
-  font-family: "Burbank Big Condensed";
+  font-family: 'Burbank Small';
   letter-spacing: 2px;
   margin-top: 20px;
   font-size: 40px;
@@ -202,35 +358,57 @@ margin-top: -20px;
   background-color: #1E7EBE;
   width: 100%;
   height: 500px;
+  background-image: url('http://i.imgur.com/MP2R205.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
+body {
+  transform: translate(): 2s;
+}
 
 </style>
 
 <script>
 
-var i = 0;
-var images = [];
-var time = 1000;
+// Buttons
 
-images[0] = 'images/headrest.png';
-images[1] = 'images/2.jpg';
-images[2] = 'images/3.jpg';
-
-function changeImg() {
-  document.getElementById("slider-banner-slider").style.backgroundImage = 'url('+images[i]+')';
-
-  if(i < images.length - 1){
-    i++;
-  } else {
-    i = 0;
-  }
-  console.log(i);
-  setTimeout("changeImg()", time);
+function playbutton() {
+  location.href= "https://cponline.pw/play";
 }
 
-//window.onload = changeImg;
+function subbutton() {
+  location.href= "https://www.youtube.com/channel/UCwEA2zZWP0AsbTuSPUgVdPw";
+}
+
+// Scroll Function
+
+window.onscroll = function() {scrolling()};
+
+function scrolling() {
+  if (document.body.scrollTop > 470 || document.documentElement.scrollTop > 470) {
+   document.getElementById("scrollbutton").style.display = "block";
+  }
+  else {
+    document.getElementById("scrollbutton").style.display = "none";
+  }
+}
+
+function tothetop() {
+  const ScrollToTop = document.querySelector("#scrollbutton");
+
+  ScrollToTop.addEventListener("click", function () {
+
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+
+  });
+}
+
 
 </script>
 

@@ -10,6 +10,7 @@
   background-color: #1E7EBE;
 }
 
+
 .youtube-section-button {
   display: -moz-inline-box;
 display: inline-block;
@@ -34,6 +35,7 @@ text-shadow: #fff 0 1px 0;
 text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
 border: 1px solid #FEB53F;
 width: 300px;
+transition: transform .4s;
 }
 }
 
@@ -253,9 +255,6 @@ background-size: cover;
     display: none;
   }
 
-.nav-bar-header-play-button:hover {
-    background-image: url("images/playhover.png");
-  }
 
 .nav-bar-links:hover {
   background-color: #1E7EBE;
@@ -275,20 +274,29 @@ background-size: cover;
 }
 
 .nav-bar-header-play-button {
-  font-size: 17px;
-  background-color: #FFC23D;
-  border: 1px solid transparent;
-  font-weight: 600;
-  width: 170px;
-  height: 47px;
-  border-radius: 15px;
-  margin-top: 10px;
-  float: right;
-  color: #604521;
-  background-image: url("images/playnorm.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: -moz-inline-box;
+display: inline-block;
+font-family: 'Poppins', proxima_nova_bold, sans-serif;
+font-weight: 600;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: url(media/button-shine-play.png) no-repeat center 0, -moz-linear-gradient(270deg, #ffe477 0, #fc0 200%);
+background: url(media/button-shine-play.png) no-repeat center 0, linear-gradient(-180deg, #ffe477 0, #fc0 200%);
+-moz-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+-webkit-box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+box-shadow: #fff7d7 0 2px 0 0 inset, rgba(0, 0, 0, 0.15) 0 3px 0;
+height: 55px;
+line-height: 55px;
+box-sizing: border-box;
+font-size: 24px;
+color: #6e4e00;
+text-shadow: #fff 0 1px 0;
+text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+border: 1px solid #FEB53F;
+width: 300px;
 }
 
 .nav-bar-header-logo {
